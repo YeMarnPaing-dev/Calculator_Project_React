@@ -26,7 +26,7 @@ const Button = ({clickEvent}) => {
         <button  className="btn" onClick={(e)=>clickEvent(e.target.innerText)}>1</button>
         <button  className="btn" onClick={(e)=>clickEvent(e.target.innerText)}>2</button>
         <button  className="btn" onClick={(e)=>clickEvent(e.target.innerText)}>3</button>
-        <button  className="btn" onClick={(e)=>clickEvent(e.target.innerText)}>x</button>
+        <button  className="btn" onClick={(e)=>clickEvent(e.target.innerText)}>*</button>
       </div>
         <div className="btn-group">
         <button  className="btn" onClick={(e)=>clickEvent(e.target.innerText)}>.</button>
