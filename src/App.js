@@ -1,13 +1,20 @@
-import './App.css';
-
-
+import "./App.css";
+import Button from "./components/Button";
+import Input from "./components/Input";
+import Output from "./components/Output";
 
 function App() {
-  return(
+  return (
     <>
-    <div>Hello Calculator Peoject</div> 
+      <div className="container">
+        <div className="calculator_frame">
+        <Output />
+        <Input />
+        <Button />
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default App;
