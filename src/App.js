@@ -15,7 +15,7 @@ function App() {
     setInput(0);
     setOutput(0);
   }else if(value=='AC'){
-    
+   input.length==1 ? setInput(0) :  setInput(input.slice(0, input.length-1))        ;
   }else if(value == '='){
        setOutput(eval(input))
        setInput(0);
