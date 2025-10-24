@@ -23,7 +23,7 @@ if(input != 0){
        setInput(0);
   }else{
    input == 0 ? setInput(value) : setInput(input + value);
-   input == '00' ? setInput(value) : setInput(input + value);
+  //  input == '00' ? setInput(value) : setInput(input + value);
   }
          }
 
