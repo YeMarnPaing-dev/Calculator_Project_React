@@ -36,7 +36,7 @@ const Button = ({clickEvent}) => {
       </div>
         <div className="btn-group">
           <button className="btn btn-long ym">YM</button>
-        <button className="btn btn-long" onClick={(e)=>clickEvent(e.target.innerText)}>=</button>
+        <button className="btn btn-long" onClick={(e)=>clickEvent(e.target.innerText)}> = </button>
       </div>
 
     </div>

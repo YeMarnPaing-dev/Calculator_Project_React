@@ -10,13 +10,18 @@ function App() {
 
   function clickEvent(value){
     setInput(value)
+    setOutput(value)
   if(value == 'C'){
     setInput(0);
     setOutput(0);
   }else if(value=='AC'){
     
-  }else if(value== '='){
-    
+  }else if(value == '='){
+       setOutput(eval(input))
+       setInput(0);
+  }else{
+   input == 0 ? setInput(value) : setInput(input + value);
+   input == '00' ? setInput(value) : setInput(input + value);
   }
          }
 
