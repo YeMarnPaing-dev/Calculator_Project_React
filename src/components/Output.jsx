@@ -1,9 +1,9 @@
 import React from 'react'
 import './Output.css'
 
-const Output = () => {
+const Output = ({output}) => {
   return (
-    <div className='outputText'>0</div>
+    <div className='outputText'>{output}</div>
   )
 }
 
