@@ -9,7 +9,15 @@ function App() {
   const [input,setInput]=useState(0);
 
   function clickEvent(value){
-    console.log(value);
+    setInput(value)
+  if(value == 'C'){
+    setInput(0);
+    setOutput(0);
+  }else if(value=='AC'){
+    
+  }else if(value== '='){
+    
+  }
          }
 
  
