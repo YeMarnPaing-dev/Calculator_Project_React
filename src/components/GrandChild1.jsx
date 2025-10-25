@@ -1,8 +1,8 @@
 import React from 'react'
 
-const GrandChild1 = () => {
+const GrandChild1 = ({title}) => {
   return (
-    <div>GrandChild1</div>
+    <div>GrandChild1 | {title}</div>
   )
 }
 

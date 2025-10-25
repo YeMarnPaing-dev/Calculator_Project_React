@@ -2,12 +2,12 @@ import React from "react";
 import GrandChild1 from "./GrandChild1";
 import "./GrandChild.css";
 
-const ChildOne = () => {
+const ChildOne = ({title}) => {
   return (
     <div>
-      ChildOne|{" "}
+      ChildOne|
       <span className="red">
-        <GrandChild1 />
+        <GrandChild1 title={title}/>
       </span>
     </div>
   );

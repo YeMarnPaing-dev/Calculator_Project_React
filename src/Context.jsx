@@ -9,7 +9,7 @@ const Context = () => {
     <div>
       <h1>Context</h1>
       <hr />
-      <ChildOne/>
+      <ChildOne title="this is testing message from root"/>
       <ChildTwo/>
       <ChildThree/>
     </div>
