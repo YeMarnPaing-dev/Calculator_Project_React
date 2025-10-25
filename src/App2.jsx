@@ -6,7 +6,7 @@ const App2 = () => {
    const [email,setEmail] = useState('')
     const [message,setMessage] = useState('')
      const [option,setOption] = useState('')
-      const [active,setActive] = useState('false')
+      const [active,setActive] = useState(false)
 
   const programminLanguages =['PHP','Java','Python','C#','C++'];
 
