@@ -6,7 +6,7 @@ const App2 = () => {
    const [email,setEmail] = useState('')
     const [message,setMessage] = useState('')
      const [option,setOption] = useState('')
-      const [checkbox,setCheckbox] = useState('')
+      const [active,setActive] = useState('false')
 
   const programminLanguages =['PHP','Java','Python','C#','C++'];
 
@@ -15,7 +15,8 @@ const App2 = () => {
       name:name,
       email:email,
       message:message,
-      option:option
+      option:option,
+      active:active
     }
     console.log(data);
     
@@ -25,16 +26,16 @@ const App2 = () => {
    <div className='container'>
      <form>
       <div className='form-group'>
-        <input type="text"  onChange={(e)=>setName(e.target.value)}  className='user-name' placeholder='Enter your name...'/>
+        <input type="text"  onChange={(e)=>setName(e.target.value)} value={name} className='user-name' placeholder='Enter your name...'/>
       </div>
        <div className='form-group'>
-        <input type="email" onChange={(e)=>setEmail(e.target.value)}  className='email' placeholder='Enter your email...'/>
+        <input type="email" onChange={(e)=>setEmail(e.target.value)}  value={email} className='email' placeholder='Enter your email...'/>
       </div>
        <div className='form-group'>
-        <textarea cols='30' onChange={(e)=>setMessage(e.target.value)}   rows="10" className='user-message' placeholder='Enter your message...' ></textarea>
+        <textarea cols='30' onChange={(e)=>setMessage(e.target.value)}  value={message} rows="10" className='user-message' placeholder='Enter your message...' ></textarea>
       </div>
       <div className="form-group">
-        <select onChange={(e)=>setOption(e.target.value)} name=""  className="user-option">
+        <select onChange={(e)=>setOption(e.target.value)} name="" value={option} className="user-option">
          {
           programminLanguages.map((item, index) => 
             <option key={index} value={item} >{item}</option>
@@ -43,9 +44,9 @@ const App2 = () => {
         </select>
       </div>
 
-       {/* <div className="form-group">
-       <input type="checkbox"  name="" className='user-checkbox' onChange={(e)=>setCheckbox(e.target.value)}/>I accept all terms 
-      </div> */}
+       <div className="form-group">
+       <input type="checkbox" name='user-checkbox' onChange={(e)=>setActive(!active)} value={active}/>I accept all terms 
+      </div>
        <div className='form-group'>
         <button type='button' onClick={ ()=>submitEvent()} className='contact-btn'>Create</button>
       </div>
