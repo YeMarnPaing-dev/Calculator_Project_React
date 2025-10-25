@@ -24,12 +24,15 @@ const Appcopy = () => {
   }
 
   const changeRed = ()=>{
-    console.log('Red');
-    
+    name.current.style.border = '1px solid red';    
+    email.current.style.border = '1px solid red';
+    message.current.style.border = '1px solid red';
   }
 
    const changeBlue = ()=>{
-    console.log('Blue');
+     name.current.style.border = '1px solid blue';    
+    email.current.style.border = '1px solid blue';
+    message.current.style.border = '1px solid blue';
     
   }
   return (
