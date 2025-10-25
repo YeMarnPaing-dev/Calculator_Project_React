@@ -1,0 +1,35 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.user-name , .email , .user-message, .user-option{
+  width: 250px;
+  margin: 5px;
+}
+
+.contact-btn{
+  background-color: black;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+.btn-danger{
+width: 100px;
+background-color: red;
+}
+
+.btn-primary{
+width: 100px;
+background-color: blue;
+}
+
+.user-checkbox{
+  margin: 5px 0px;
+}
