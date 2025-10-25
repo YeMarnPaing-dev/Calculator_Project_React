@@ -22,6 +22,16 @@ const Appcopy = () => {
     console.log(data);
     
   }
+
+  const changeRed = ()=>{
+    console.log('Red');
+    
+  }
+
+   const changeBlue = ()=>{
+    console.log('Blue');
+    
+  }
   return (
    <div className='container'>
      <form>
@@ -36,6 +46,10 @@ const Appcopy = () => {
       </div>
        <div className='form-group'>
         <button type='button' onClick={()=> userData()}  className='contact-btn'>Create</button>
+      </div>
+      <div className='form-group'>
+        <button type='button' onClick={()=> changeRed()} className='contact-btn btn-danger'>Change Red</button>
+        <button type='button' onClick={()=> changeBlue()} className='contact-btn btn-primary'>Change BLue</button>
       </div>
      </form>
    </div>

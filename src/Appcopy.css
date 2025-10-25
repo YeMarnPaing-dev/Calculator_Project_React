@@ -17,4 +17,15 @@
   width: 50px;
   height: 25px;
   border-radius: 5px;
+  margin: 5px 10px;
+}
+
+.btn-danger{
+width: 100px;
+background-color: red;
+}
+
+.btn-primary{
+width: 100px;
+background-color: blue;
 }
