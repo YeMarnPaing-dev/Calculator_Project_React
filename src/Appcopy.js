@@ -3,9 +3,25 @@ import './Appcopy.css'
 import { useRef } from 'react'
 
 const Appcopy = () => {
-  const name= useRef('');
-  const email= useRef('');
-  const message= useRef('');
+  let name= useRef('');
+  let email= useRef('');
+  let message= useRef('');
+
+  const userData = ()=> {
+    const data = {
+      userName : name.current.value,
+      userEmail : email.current.value,
+      userMessage : message.current.value,
+    }
+
+    name.current.value = '';
+    email.current.value = '';
+    message.current.value = '';
+    
+
+    console.log(data);
+    
+  }
   return (
    <div className='container'>
      <form>
@@ -19,7 +35,7 @@ const Appcopy = () => {
         <textarea cols='30' ref={message} rows="10" className='user-message' placeholder='Enter your message...' ></textarea>
       </div>
        <div className='form-group'>
-        <button  className='contact-btn'>Create</button>
+        <button type='button' onClick={()=> userData()}  className='contact-btn'>Create</button>
       </div>
      </form>
    </div>
