@@ -30,7 +30,7 @@ const Appcopy = () => {
   }
 
    const changeBlue = ()=>{
-     name.current.style.border = '1px solid blue';    
+    name.current.style.border = '1px solid blue';    
     email.current.style.border = '1px solid blue';
     message.current.style.border = '1px solid blue';
     
