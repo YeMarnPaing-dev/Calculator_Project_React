@@ -1,13 +1,17 @@
-import React from "react";
+import React,{useContext} from "react";
 import GrandChild1 from "./GrandChild1";
 import "./GrandChild.css";
+import ThemeContext from "../context/ThemeContext";
 
 const ChildOne = ({title}) => {
+  const contextData = useContext(ThemeContext)
+  console.log(contextData);
+  
   return (
     <div>
       ChildOne|
       <span className="red">
-        <GrandChild1 title={title}/>
+        <GrandChild1 />
       </span>
     </div>
   );
