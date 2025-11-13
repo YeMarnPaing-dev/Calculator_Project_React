@@ -8,7 +8,7 @@ const ChildOne = ({title}) => {
   console.log(contextData);
   
   return (
-    <div>
+    <div className={contextData == 'dark' ? 'bg-dark' : 'bg-white'}>
       ChildOne|
       <span className="red">
         <GrandChild1 />

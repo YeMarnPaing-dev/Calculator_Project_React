@@ -11,7 +11,7 @@ const Context = () => {
       <h1>Context</h1>
       <hr />
 
-      <ThemeContext.Provider value={"this is testing message from root"}>
+      <ThemeContext.Provider value={'dark'}>
         <ChildOne  />
         <ChildTwo />
         <ChildThree />
