@@ -4,6 +4,7 @@ import App from './App';
 import Appcopy from './Appcopy';
 import App2 from './App2';
 import Context from './Context';
+import Hook from './Hook';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +13,8 @@ root.render(
     {/* <App /> */}
     {/* <Appcopy/> */}
     {/* <App2/> */}
-    <Context/>
+    {/* <Context/> */}
+    <Hook/>
   </React.StrictMode>
 );
 
