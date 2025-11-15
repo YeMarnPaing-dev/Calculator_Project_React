@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 import "./Hook.css";
 
 const Hook = () => {
@@ -10,10 +10,16 @@ const fetchData = async () => {
     .catch(error => console.log(error.message));
 
    setPost(data)
+   console.log(data);
+   
      
 };
 
+useEffect(()=> {
 fetchData();
+},[])
+
+
 
     
   return (
@@ -21,9 +27,9 @@ fetchData();
         <h1>Api Post Data</h1>
         <hr />
         {
-            posts.map((post,index)=>{
-                <li key={index}>{post.title}</li>
-            })
+           posts.map((post,index)=>(
+            <li key={post.id}> {post.title}</li>
+           ))
          }       
   </div>
   )
