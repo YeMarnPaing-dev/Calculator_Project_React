@@ -5,8 +5,13 @@ const Counter = () => {
     const [counter,setCounter] = useState(10)
 
     useEffect(()=>{
-        setCounter(--counter)
-    })
+     if(counter >= 0){         
+      const interval = setInterval(()=>{setCounter(counter-1)},1000)
+       return ()=>{
+        clearInterval(interval)
+       }      
+       }
+    },[counter])
   return (
     <div className='container'>
         <h1>{counter}</h1>
